@@ -1,0 +1,138 @@
+:root {
+    --primary: #0B0A0D;
+    --secondary: #f1f1f1;
+    --gray: #ccc;
+    --accent: tomato;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary);
+}
+
+html, body {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+*, button, input {
+    border: 0;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background: var(--secondary);
+    border: 5px solid var(--accent);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.welcome {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome select {
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.game label {
+    margin-top: 20px;
+}
+
+.game input {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game button {
+    background: var(--gray);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.game .help {
+    margin-top: 40px;
+    border-top: 2px dashed var(--gray);
+    width: 100%;
+    display: flex;
+}
+
+.game .help > img,
+.game .help ul {
+    width: 50%;
+}
+
+.game .help ul {
+    border-right: 2px dashed var(--gray);
+    list-style: none;
+    padding-top: 40px;
+    margin-left: 40px;
+    padding-right: 40px;
+}
+
+.game .help ul li {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    justify-content: space-between;
+}
+
+.game {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 20px;
+    background: var(--accent);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+}

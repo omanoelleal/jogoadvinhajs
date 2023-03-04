@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Adivinha</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo do Adivinha</h1>
+
+        <div class="welcome">
+            <h2>Vamos jogar</h2>
+            <select class="level">
+                <option value="1">Nível 1 - 2 minutos com 15 tentativas</option>
+                <option value="2">Nível 2 - 1 minuto com 10 tentativas</option>
+                <option value="3">Nível 3 - 15 segundos com 5 tentativas</option>
+            </select>
+
+            <button class="btn">Jogar</button>
+        </div>
+
+        <div class="game">
+            <h2>---</h2>
+            <label>
+                <input type="number">
+                <button>Jogar</button>
+            </label>
+
+            <div class="help">
+                <ul>
+                    <li>50 <img src="images/up.png" width="20"></li>
+                    <li>50 <img src="images/up.png" width="20"></li>
+                    <li>50 <img src="images/up.png" width="20"></li>
+                    <li>50 <img src="images/up.png" width="20"></li>
+                </ul>
+                <img src="images/question.png" width="200">
+            </div>
+        </div>
+
+        <div class="resume">
+            <img src="images/sad.png" width="200">
+            <h2>Resume message</h2>
+            <button class="btn">Novo jogo</button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
