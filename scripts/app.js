@@ -68,9 +68,11 @@ function play () {
         return;
     }
 
+    console.log(game.moves.length);
+    
     if (game.moves.length <= game.moves.lives) {
         help(move);
-        // console.log(game.moves.length);
+        // 
     } else {
         endGame(false);
     }
