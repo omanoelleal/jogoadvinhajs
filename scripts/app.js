@@ -70,7 +70,7 @@ function play () {
 
     if (game.moves.length <= game.moves.lives) {
         help(move);
-        console.log(game.moves.length);
+        // console.log(game.moves.length);
     } else {
         endGame(false);
     }
