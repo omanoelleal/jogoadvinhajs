@@ -69,8 +69,8 @@ function play () {
     }
 
     if (game.moves.length <= game.moves.lives) {
-        console.log(game.moves.length);
         help(move);
+        console.log(game.moves.length);
     } else {
         endGame(false);
     }
