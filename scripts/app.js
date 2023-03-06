@@ -70,11 +70,11 @@ function play () {
 
     console.log(game.moves.length);
     
-    if (game.moves.length <= game.moves.lives) {
-        help(move);
+    if (game.moves.length === game.moves.lives) {
         // 
-    } else {
         endGame(false);
+    } else {
+        help(move);
     }
 
     userInput.value = null;
