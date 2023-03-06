@@ -68,10 +68,10 @@ function play () {
         return;
     }
 
-    if (game.moves.length === game.moves.lives) {
-        endGame(false);
-    } else {
+    if (game.moves.length <= game.moves.lives) {
         help(move);
+    } else {
+        endGame(false);
     }
 
     userInput.value = null;
